@@ -1,0 +1,34 @@
+<div class="background">
+    <nav>
+      <a id="signup" routerLink="/signup">Sign Up</a>
+    </nav>
+    
+    <div class="loginForm">
+      <img class="img-responsive" src="assets/pic2.png">
+      <p class="lead">Building Product Selection Platform</p>
+      <h2>Login</h2>
+      <form [formGroup]="loginForm" (submit)="onSubmit()">
+    
+        <div class="form-group">
+            
+            <div><label for="username">Username</label></div>
+            <input name="username" formControlName="username" type="username" class="form-control" id="username"
+                 aria-describedby="emailHelp" placeholder="Enter email" >
+                 <div *ngIf="f().username.errors" class="invalid-feedback">
+                     <div *ngIf="f().username.errors.required">Username is required</div>
+                </div>
+        </div>
+        <div class="form-group">
+            
+            <div><label for="password">Password</label></div>
+          <input name="password" formControlName="password" type="password" class="form-control" id="password"
+                 placeholder="Password"  />
+          <div *ngIf="f().password.errors" class="invalid-feedback">
+              <div *ngIf="f().password.errors.required">Password is required</div>
+          </div>
+          <button class="btn btn-primary" routerLink = "../productsearch">Login</button>
+        </div>
+      </form>
+    </div>
+    </div>
+    

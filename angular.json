@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "joole-wendy"
+    }
+  },
+  "defaultProject": "joole-wendy",
+  "cli": {
+    "analytics": false
+  }
 }

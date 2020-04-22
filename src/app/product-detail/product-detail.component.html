@@ -1,0 +1,147 @@
+<app-header></app-header>
+<ol class="breadcrumb">
+    <li>Mechanical</li>
+    <li><div class="list-path" >{{subCateName}}</div></li>
+    <li><div class="list-path" >{{product}}</div></li>
+  </ol>
+
+
+  
+
+<div class="overview">
+    <span>image</span>
+    <span> {{product.manufacturer}} / {{product.series}} / {{product.model}}</span>
+    <span>Pat specifications: {{product.firm}} / {{product.global}} global</span>
+</div>
+
+
+<div class="info-menu-block">
+    <label class="info-meu"><a>Product Summary</a></label>
+    <label class="info-meu"><a>Product Details</a></label>
+    <label class="info-meu"><a>Product Documentation</a></label>
+    <label class="info-meu"><a>Contact</a></label>
+  </div>
+  <h2><a id="part1">Product Summary</a></h2>
+
+
+
+  <div>
+  <table class="table table-borderless part1">
+    <tbody>
+      <tr>
+        <th>DESCRIPTION</th>
+      </tr>
+      <tr>
+        <th scope="row" class="row-title">Manufacture</th>
+        <td>{{ product['manufacturer'] }}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="row-title">Series</th>
+        <td>{{ product.series }}</td>
+      </tr>
+      <tr>
+        <th scope="row" class="row-title">Model</th>
+        <td>{{ product.model }}</td>
+      </tr>
+      <tr>
+        <th>Type</th>
+      </tr>
+      <tr>
+        <th scope="row" class="row-title">Use Type</th>
+        <td>Commercial</td>
+      </tr>
+      <tr>
+        <th scope="row" class="row-title">Application</th>
+        <td>Indoor</td>
+      </tr>
+      <tr>
+        <th scope="row" class="row-title">Mounting Location</th>
+        <td>Roof</td>
+      </tr>
+      <tr>
+        <th scope="row" class="row-title">Accessories</th>
+        <td>With Light</td>
+      </tr>
+      <tr>
+        <th scope="row" class="row-title">Model year</th>
+        <td>2016</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+    <table class="table table-borderless part1">
+      <tbody>
+        <tr>
+          <th>TECHNICAL SPECIFICATION</th>
+        </tr>
+        <tr>
+          <th scope="row" class="row-title">Airflow (CFM)</th>
+          <td>{{ product.airFlow }}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="row-title">Power (W)</th>
+          <th scope="row" class="sub-row-title">Min</th>
+          <td>{{ product.minPower }}</td>
+          <th scope="row" class="sub-row-title">Max</th>
+          <td>{{ product.maxPower }}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="row-title">Fan speed (RPM)</th>
+          <th scope="row" class="sub-row-title">Min</th>
+          <td>{{product.minFanSpeed}}</td>
+          <th scope="row" class="sub-row-title">Max</th>
+          <td>{{product.maxFanSpeed}}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="row-title">Number of fan speeds</th>
+          <td>{{product.numberOfFanSpeeds}}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="row-title">Sound at max speed (dBA)</th>
+          <td>{{product.soundAtMaxSpeed}}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="row-title">Height (in)</th>
+          <th scope="row" class="sub-row-title">Min</th>
+          <td>{{product.minHeight}}</td>
+          <th scope="row" class="sub-row-title">Max</th>
+          <td>{{product.maxHeight}}</td>
+        </tr>
+        <tr>
+          <th scope="row" class="row-title">Weight (lbs)</th>
+          <td>{{product.weight}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+
+
+
+<h2>Product Details</h2>
+<table class="table table-borderless part2">
+  <tbody>
+    <tr><th>SERIES INFORMATION</th></tr>
+      
+      <tr *ngFor="let item of product.Series" >
+        <td>{{ item }}</td>
+      </tr>
+          
+        
+    
+     
+  </tbody>
+</table>
+
+<h2>Product Documentation</h2>
+<table class="table table-borderless part3">
+  <tbody>
+    <tr>
+      <th>Documentation</th>
+    </tr>
+  </tbody>
+</table>
+
+<h2><a id="part4">Contact</a></h2> 

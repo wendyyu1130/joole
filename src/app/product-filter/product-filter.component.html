@@ -1,0 +1,57 @@
+<div class="filter">
+<div>
+    <label class="search">Search:  </label>
+<button type="submit" class="btn btn-primary submit" (click)="onFilterSubmit()">Save</button>
+<button type="submit" class="btn btn-primary clear" (click)="onFilterClear()">Clear</button>
+</div>
+
+
+
+
+<label class="form-group">Airflow(W)</label><br>
+<div class="form-inline">
+<input type="number" [(ngModel)]="minpower">
+<div class="custom-slider">
+<ng5-slider [(value)]="minpower" [(highValue)]="maxpower" [options]="options1"></ng5-slider>
+</div>
+<input type="number" [(ngModel)]="maxpower">
+</div>
+
+<label class="form-group">Max power(W)</label><br>
+<div class="form-inline">
+<input type="number" [(ngModel)]="minpower">
+<div class="custom-slider">
+<ng5-slider [(value)]="minpower" [(highValue)]="maxpower" [options]="options1"></ng5-slider>
+</div>
+<input type="number" [(ngModel)]="maxpower">
+</div>
+
+<label class="form-group">Sound at max speed (dBA)</label><br>
+<div class="form-inline">
+<input type="number" [(ngModel)]="minsoundspeed">
+<div class="custom-slider">
+<ng5-slider [(value)]="minsoundspeed" [(highValue)]="maxsoundspeed" [options]="options1"></ng5-slider>
+</div>
+<input type="number" [(ngModel)]="maxsoundspeed">
+</div>
+
+<label class="form-group">Fan sweep diameter (in)</label><br>
+<div class="form-inline">
+<input type="number" [(ngModel)]="mindiameter">
+<div class="custom-slider">
+<ng5-slider [(value)]="mindiameter" [(highValue)]="maxdiameter" [options]="options1"></ng5-slider>
+</div>
+<input type="number" [(ngModel)]="maxdiameter">
+</div>
+
+<label class="form-group">Height(in)</label><br>
+<div class="form-inline">
+<input type="number" [(ngModel)]="minheight">
+<div class="custom-slider">
+<ng5-slider [(value)]="minheight" [(highValue)]="maxheight" [options]="options1"></ng5-slider>
+</div>
+<input type="number" [(ngModel)]="maxheight">
+</div>
+
+
+</div>

@@ -1,0 +1,28 @@
+export interface ProductDetails{
+    id:number,
+    manufacturer: string,
+    series:string,
+    model: string,
+    useType:string,
+    application: string,
+    mountingLocation: string,
+    accessories: string,
+    modelYear:number,
+    airFlow:string,
+    minPower:number,
+    maxPower:number,
+    minOperatingVoltage:number,
+    maxOperatingVoltage:number,
+    minFanSpeed:number,
+    maxFanSpeed:number,
+    numberOfFanSpeeds:number,
+    soundAtMaxSpeed:number,
+    fanSweepDiameter:number,
+    minHeight:number,
+    maxHeight:number,
+    weight:number,
+    seriesInfo:string[],
+    firm: number,
+    global: number
+
+}

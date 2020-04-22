@@ -1,0 +1,15 @@
+#search {
+    width: 70%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 70px;
+    display: inline-flex;
+    justify-content: center;
+    float: left;
+  }
+
+  
+.container-fluid {
+    padding-top: 15px;
+  }
+

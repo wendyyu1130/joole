@@ -1,0 +1,49 @@
+
+.filter{
+    padding: 15px;
+    background: white;
+    border: 1px solid;
+}
+.submit{
+    margin-left: 10%;
+    margin-bottom: 5px;
+    background-color: grey;
+    color: white
+  }
+
+  .clear{
+    margin-left: 10%;
+    margin-bottom: 5px;
+    background-color: grey;
+    color: white
+  }
+
+  input[type=number] {
+    width: 60px;
+    float: left;
+  }
+  
+  .form-group {
+    margin-left: 5px;
+    margin-right: 20px;
+  }
+  .custom-slider .ng5-slider  {
+    width: 50%;
+    float: left;
+    margin: 15px 5px 0 5px;
+  }
+  .form-inline {
+    height: 70px;
+  }
+  .start{
+      width:50px
+  }
+  .end{
+    width:50px
+}
+
+
+
+
+
+  
